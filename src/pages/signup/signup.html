@@ -1,0 +1,44 @@
+
+<ion-navbar>
+  <ion-title>Create Account</ion-title>
+</ion-navbar>
+<ion-content>
+
+  <ion-list>
+    <h1 class="page-title">Create Account</h1>
+
+    <form #signupForm="ngForm" novalidate>
+      <ion-item class="input-field">
+        <ion-label floating>Username</ion-label>
+        <ion-input [(ngModel)]="signup.username" name="username" type="text" #username="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <p [hidden]="username.valid || submitted == false" color="danger" padding-left>
+        Username is required
+      </p>
+
+      <ion-item class="input-field">
+        <ion-label floating>Email</ion-label>
+        <ion-input [(ngModel)]="signup.email" name="email" type="email" #email="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <p [hidden]="email.valid || submitted == false" color="danger" padding-left>
+        Email is required
+      </p>
+
+      <ion-item class="input-field">
+        <ion-label floating>Password</ion-label>
+        <ion-input [(ngModel)]="signup.password" name="password" type="password" #password="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <p [hidden]="password.valid || submitted == false" color="danger" padding-left>
+        Password is required
+      </p>
+
+      <div padding>
+        <button ion-button (click)="onNext(signupForm)" type="submit" block class="button-signup">Next</button>
+      </div>
+    </form>
+  </ion-list>
+
+</ion-content>

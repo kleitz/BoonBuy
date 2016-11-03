@@ -1,0 +1,11 @@
+page-withdraw ion-content {
+  .input-amount {
+    padding: 4px !important;
+    background: rgba(0, 0, 0, 0.1);
+    
+    ion-input .text-input {
+      text-align: center;
+    }
+  }
+
+}

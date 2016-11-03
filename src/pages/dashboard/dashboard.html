@@ -1,0 +1,75 @@
+<!--
+  Generated template for the Dashboard page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dashboard</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="div-header">
+    <ion-row>
+      <ion-col width-20></ion-col>
+      <ion-col><ion-card>
+          <ion-card-content>
+            N 59,800
+          </ion-card-content>
+          
+        </ion-card></ion-col>
+      <ion-col width-20></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="text-center">BBN 0.190000</p>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="div-main">
+    <ion-row class="text-center">
+      <ion-col class="col-buy">Buy</ion-col>
+      <ion-col class="col-sell">Sell</ion-col>
+    </ion-row>
+    <ion-row class="text-center">
+      <ion-col>
+        <button ion-button (click)="openDepositsPage()" color="dark" block outline>Deposits</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="openWithdrawPage()" color="dark" block outline>Withdraw</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="text-center">
+      <ion-col>
+        <button ion-button (click)="openMyBalancePage()" color="dark" block outline>My Balance</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="openReinvestPage()" color="dark" block outline>Reinvest</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="text-center">
+      <ion-col>
+        <button ion-button (click)="openAllTransPage()" color="dark" block outline>All Transactions</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="openMyReferPage()" color="dark" block outline>My Referral Link</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="text-center">
+      <ion-col>
+        <button ion-button (click)="openAddBankPage()" color="dark" block outline>Add Bank</button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Customize ads</ion-title>
+  </ion-toolbar>
+</ion-footer>

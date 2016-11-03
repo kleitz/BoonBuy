@@ -1,0 +1,31 @@
+<ion-content no-bounce>
+  <ion-slides [options]="{pager: true}" (ionWillChange)="onSlideChangeStart($event)">
+    <ion-slide *ngFor="let slide of slides, let i=index" 
+        [ngStyle]="{ 
+          'background': 'url(' + slide.image + ')',
+          '-webkit-background-size': 'cover',
+          '-moz-background-size': 'cover',
+          'background-size': 'cover'
+        }">
+        <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+        <img [src]="'assets/img/tutorials/icon' + (i + 1) + '.png' " class="slide-image"/>
+        <p class="slide-description" [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide [ngStyle]="{ 
+          'background': 'url(assets/img/tutorials/4.png)',
+          '-webkit-background-size': 'cover',
+          '-moz-background-size': 'cover',
+          'background-size': 'cover'
+        }">
+      <button ion-button icon-right clear side="right" class="slide-skip" (click)="startApp()">
+        Skip
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>  
+      <img src="assets/img/tutorials/icon4.png" class="slide-image"/>
+      <h2 class="slide-title">Utility Bills</h2>
+      
+      <p class="slide-description">Pay for your next utility bills free here. No additional charges</p>
+      
+    </ion-slide>
+  </ion-slides>
+</ion-content>

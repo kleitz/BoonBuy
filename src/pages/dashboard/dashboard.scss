@@ -1,0 +1,30 @@
+page-dashboard ion-content {
+  .text-center {
+    text-align: center;
+  }  
+
+  .div-header {
+    ion-card {
+      ion-card-content {
+        text-align: center !important;
+      }
+    }
+  }
+
+  .div-main {
+    margin-top: 3.2rem;
+
+    button {
+      text-transform: capitalize;
+    }
+    .col-buy {
+      padding: 12px 0px;
+      background: #008000;
+    }
+    .col-sell {
+      padding: 15px 0px;
+      background: #ff0000;
+    }
+  }
+  
+}

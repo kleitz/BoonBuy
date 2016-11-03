@@ -1,0 +1,56 @@
+page-phone-verification ion-content {
+  background: #636262 !important;
+  color: rgba(255, 255, 255, .9) !important;
+
+  .page-title {
+    margin-top: 6.4rem;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  form {
+    margin-top: 4.8rem;
+  }
+  ion-row {
+    padding-right: 16px;
+  }
+  .input-field {
+    background: transparent;
+    color: rgba(255, 255, 255, .9) !important;
+    
+    ion-label {
+      color: rgba(255, 255, 255, .9) !important;
+    }
+    
+  }
+  .button-send-verify {
+    margin-top: 3.2rem;
+    background: #ff6600;
+    text-transform: capitalize;
+    position: absolute;
+    right: 24px;
+    width: 80px;
+  }
+  .button-send-confirm {
+    margin-top: 3.2rem;
+    // background: #ff6600;
+    text-transform: capitalize;
+    position: absolute;
+    right: 24px;
+    width: 80px;
+  }
+  .country-code {
+    max-width: 104px !important;
+
+    ion-select {
+      padding: 0px 2px !important;
+      width: 72px !important;
+      max-width: 72px !important;
+      margin-bottom: -13.6px !important;
+    }
+  }
+  .phone-number {
+    input {
+      margin-bottom: -13.6px !important;
+    }
+  }
+}

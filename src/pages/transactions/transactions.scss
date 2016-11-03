@@ -1,0 +1,33 @@
+page-transactions ion-content {
+  .text-center {
+    text-align: center;
+  }
+  .text-right {
+    text-align: right;
+  }
+
+  .div-header {
+    margin-top: 2.4rem;
+    .page-title {
+      border-bottom: solid 1px rgba(0, 0, 0, 0.8);
+    }
+  }
+  .total-sum {
+    font-style: italic !important;
+  }
+  .div-main {
+    margin-top: 3.2rem;
+    .table-header {
+      ion-col {
+        padding: 8px 8px !important;
+        background: rgba(0, 108, 116, 0.2);        
+      }
+    }
+    .table-body {
+        ion-col {
+          padding: 12px 8px !important;
+          background: rgba(0, 0, 0, 0.1);
+        }
+    }
+  }
+}
