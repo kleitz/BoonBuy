@@ -19,12 +19,22 @@ import { CompleteAccount } from '../pages/complete-account/complete-account';
 import { ResetPassword } from '../pages/reset-password/reset-password';
 import { Dashboard } from '../pages/dashboard/dashboard';
 import { Deposits } from '../pages/deposits/deposits';
-import { Withdraw } from '../pages/withdraw/withdraw';
+
 import { Balance } from '../pages/balance/balance';
 import { Reinvest } from '../pages/reinvest/reinvest';
 import { Transactions } from '../pages/transactions/transactions';
 import { ReferralLink } from '../pages/referral-link/referral-link';
 import { Banks } from '../pages/banks/banks';
+
+import { Withdraw } from '../pages/withdraw/withdraw';
+import { WdBank } from '../pages/wd-bank/wd-bank';
+import { WdTransfer } from '../pages/wd-transfer/wd-transfer';
+import { WdRecharge } from '../pages/wd-recharge/wd-recharge';
+import { WdCtv } from '../pages/wd-ctv/wd-ctv';
+import { WdInternet } from '../pages/wd-internet/wd-internet';
+import { WdIkelectric } from '../pages/wd-ikelectric/wd-ikelectric';
+import { WdWaec } from '../pages/wd-waec/wd-waec';
+import { WdEticket } from '../pages/wd-eticket/wd-eticket';
 
 import { AuthProvider } from '../providers/auth';
 
@@ -51,13 +61,21 @@ export const firebaseConfig = {
     CompleteAccount,
     ResetPassword,
     Dashboard,
-    Deposits,
-    Withdraw,
+    Deposits,    
     Balance,
     Reinvest,
     Transactions,
     ReferralLink,
-    Banks
+    Banks,
+    Withdraw,
+    WdBank,
+    WdTransfer,
+    WdRecharge,
+    WdCtv,
+    WdInternet,
+    WdIkelectric,
+    WdWaec,
+    WdEticket
   ],
   imports: [
     IonicModule.forRoot(BoonBuyApp),
@@ -79,12 +97,20 @@ export const firebaseConfig = {
     ResetPassword,
     Dashboard,
     Deposits,
-    Withdraw,
     Balance,
     Reinvest,
     Transactions,
     ReferralLink,
-    Banks
+    Banks,
+    Withdraw,
+    WdBank,
+    WdTransfer,
+    WdRecharge,
+    WdCtv,
+    WdInternet,
+    WdIkelectric,
+    WdWaec,
+    WdEticket
   ],
   providers: [AuthProvider, Storage]
 })

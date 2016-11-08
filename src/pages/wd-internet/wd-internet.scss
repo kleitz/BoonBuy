@@ -1,4 +1,4 @@
-page-withdraw ion-content {
+page-wd-internet ion-content {
   .input-amount {
     padding: 4px !important;
     background: rgba(0, 0, 0, 0.1);
@@ -7,9 +7,4 @@ page-withdraw ion-content {
       text-align: center;
     }
   }
-
-  ion-list button {
-    text-align: center !important;
-  }
-
 }
